@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dl_approval"
+    tools:context="co.njcreatives.www.assesment.Activities.ApprovalActivity">
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!--   <android.support.design.widget.AppBarLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="25dp"
+                   android:elevation="0dp"
+                   android:background="@color/green"></android.support.design.widget.AppBarLayout>-->
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark">
+            </android.support.v7.widget.Toolbar>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/approval_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_blue_dark"
+                app:title="@string/approval"
+                >
+
+            </android.support.v7.widget.Toolbar>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                app:cardElevation="4dp" >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/ic_access_time_black_24dp"
+
+                        />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="40dp"
+
+                        android:layout_gravity="center_vertical"
+                        >
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="09.30"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:textSize="38sp"
+                            android:fontFamily="@font/roboto_light"/>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average office hrs"
+                            android:textColor="@color/lightGray"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/roboto_light"/>
+
+
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="70dp"
+                        android:background="@color/lightGray"
+                        android:layout_margin="10dp"
+
+
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="10dp"
+
+                        android:layout_gravity="center_vertical"
+                        >
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="08.55"
+                            android:textColor="@android:color/holo_blue_light"
+                            android:textSize="38sp"
+                            android:fontFamily="@font/roboto_light"/>
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Average Timesheet hrs"
+                            android:textColor="@color/lightGray"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/roboto_light"/>
+
+
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:rowCount="2"
+                    android:columnCount="3">
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/approval_blue"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/approvalCard"
+                            android:text="2"
+                            android:fontFamily="@font/roboto_light"
+
+                            />
+                        <TextView
+                            android:layout_marginTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/approvalCardSmall"
+                            android:text="PL"
+                            android:fontFamily="roboto"
+
+                            />
+
+
+
+
+
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/approval_red"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/approvalCard"
+                            android:text="1.5"
+                            android:fontFamily="@font/roboto_light"
+
+                            />
+                        <TextView
+                            android:layout_marginTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/approvalCardSmall"
+                            android:text="Comp Off"
+                            android:fontFamily="@font/roboto"
+
+                            />
+
+
+
+
+
+
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        android:layout_width="90dp"
+                        android:layout_height="120dp"
+                        android:layout_margin="10dp"
+                        app:cardBackgroundColor="@color/approval_yellow"
+                        >
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/approvalCard"
+                            android:text="1.5"
+                            android:fontFamily="@font/roboto_light"
+
+                            />
+                        <TextView
+                            android:layout_marginTop="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            style="@style/approvalCardSmall"
+                            android:text="SL"
+                            android:fontFamily="@font/roboto"
+
+                            />
+
+
+
+
+
+
+                    </android.support.v7.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            style="@style/round_text_below_card_view"
+                            android:text="3"
+                            android:background="@drawable/greycircle"
+                            />
+                        <TextView
+                            style="@style/text_below_round"
+                            android:text="Missed Punch"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            style="@style/round_text_below_card_view"
+                            android:text="0"
+                            android:background="@drawable/greycircle"
+                            />
+                        <TextView
+                            style="@style/text_below_round"
+                            android:text="Work on Holiday"
+                            />
+
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <TextView
+                            style="@style/round_text_below_card_view"
+                            android:text="2"
+                            android:background="@drawable/greycircle"
+                            />
+                        <TextView
+                            style="@style/text_below_round"
+                            android:text="Work from home"
+                            />
+
+
+                    </LinearLayout>
+                </GridLayout>
+
+
+
+
+
+
+
+
+
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="10dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="5dp"
+
+                    >
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/ic_cake_black_24dp"/>
+                    <TextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:textSize="18sp"
+                        android:textColor="@color/approval_purple"
+                        android:layout_gravity="center"
+                        android:fontFamily="roboto"
+                        android:text="BIRTHDAY WISHES"/>
+                    <Button
+                        android:onClick="viewAllBirthDays"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="View All"
+                        android:textSize="8sp"
+                        android:layout_marginLeft="80dp"
+                        android:textColor="@color/approval_blue"/>
+
+                </LinearLayout>
+                <!-- <android.support.v4.view.ViewPager
+                     android:id="@+id/approval_viewPager"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:layout_marginTop="20dp"
+                     >
+
+                 </android.support.v4.view.ViewPager>-->
+                <android.support.v7.widget.RecyclerView
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+
+                    android:id="@+id/rv_dashboard_birthday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    >
+
+
+                </android.support.v7.widget.RecyclerView>
+
+
+
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="0dp"
+            android:background="@color/lightGray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+
+            app:itemIconTint="@color/bnv_tab_item_foreground"
+            app:itemTextColor="@color/bnv_tab_item_foreground"
+            app:menu="@menu/navigation" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.design.widget.NavigationView
+
+        android:id="@+id/nv_approval"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/profile_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/dashboard_navigation_header"
+        >
+
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>

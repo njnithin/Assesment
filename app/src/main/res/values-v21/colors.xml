@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="colorAccent">#ff4340</color>
+    <color name="backgroundColor">#fcfcfc</color>
+    <color name="lightGray">#c7c3c3</color>
+    <color name="deepPurple">#7c4dff</color>
+    <color name="yellow">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="black">#0d0c0c</color>
+
+    <color name="approval_blue">#47A7EE</color>
+    <color name="approval_red">#F25169</color>
+    <color name="approval_yellow">#FFBE12</color>
+    <color name="approval_purple">#7100A0</color>
+    <color name="approval_green">#00ABB7</color>
+
+</resources>

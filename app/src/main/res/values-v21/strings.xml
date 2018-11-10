@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Assessment</string>
+    <string name="approval_screen">Approval Screen</string>
+    <string name="request_screen">Request Screen</string>
+    <string name="dashboard">Dashboard</string>
+
+    <string name="drawerOpen">Open</string>
+    <string name="drawerClosed">Closed</string>
+    <string name="approval">Approval</string>
+    <string name="request">Request</string>
+    <string name="logout">Logout</string>
+</resources>

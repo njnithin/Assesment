@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+   >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            app:cardElevation="10dp"
+            app:cardCornerRadius="5dp"
+
+
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tv_time"
+                    android:text="04.30"
+                    android:layout_marginLeft="10dp"
+                    android:layout_gravity="center_vertical"/>
+               <FrameLayout
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_gravity="center_vertical"
+                   android:layout_marginLeft="5dp"
+
+                   >
+
+
+
+                   <ImageView
+                       android:id="@+id/iv_profilepic"
+                       android:layout_width="40dp"
+
+
+                       android:layout_height="40dp"
+                       android:layout_gravity="center"
+
+                       android:elevation="10dp"
+                       android:background="@drawable/profilepic1"
+
+
+                       />
+                   <View
+
+                       android:layout_width="1dp"
+                       android:layout_gravity="center"
+                       android:layout_height="fill_parent"
+                       android:background="@color/lightGray" />
+
+
+
+               </FrameLayout>
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:layout_marginLeft="30dp"
+
+
+                >
+
+                <TextView
+                    android:id="@+id/tv_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+
+                    android:elevation="15dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="Steve ran 1.5 hrs"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+
+                    android:id="@+id/tv_completion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/roboto_light"
+                    android:text="2O% Copleted"
+                    android:textColor="@color/lightGray"
+                    android:textSize="10sp" />
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/ic_chevron_left_black_24dp"
+                android:layout_gravity="end"
+                android:layout_margin="10dp"/>
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

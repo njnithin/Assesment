@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="SuperParent">
+
+
+        <item name="colorControlActivated">#05ff82</item>
+
+
+    </style>
+
+
+    <style name="SuperParent" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="drawerArrowStyle">@style/DrawerArrowStyle</item>
+
+    </style>
+
+    <style name="MyButtonTheme" parent="android:Theme">
+        <item name="android:shadowColor">@color/colorAccent</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">0.7</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+   <style name="userDetails">
+       <item name="android:textColor">#ffff</item>
+       <item name="android:textSize">14sp</item>
+
+
+   </style>
+
+    <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@android:color/white</item>
+        <item name="spinBars">true</item>
+
+    </style>
+
+    <style name="approvalCard">
+
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">38sp</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+    <style name="approvalCardSmall">
+
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">30dp</item>
+
+    </style>
+
+    <style name="round_text_below_card_view">
+
+
+        <item name="android:textSize">15sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+      >
+
+
+    </style>
+    <style name="text_below_round">
+
+
+        <item name="android:textSize">10sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        >
+
+
+    </style>
+
+
+</resources>
