@@ -142,6 +142,7 @@ public class MyRecyclerViewAdapter extends RecyclerView.Adapter<MyRecyclerViewAd
                       birthdayPic.setImageResource(images.get(position));
                       name.setText(names.get(position));
                       date.setText(dates.get(position));
+                      //git
 
 
         }
